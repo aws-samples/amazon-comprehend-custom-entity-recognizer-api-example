@@ -12,13 +12,13 @@ In order to demostrate this functionality, I have used below architecture where 
 
 ![architecture](./images/architecture.png)
 
-You can use the tutorial documentation [link](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html), which depicts on how to create an Lambda proxy integration with Amazon API gateway. 
+ 
 
 ### Prerequisites
 
 1. Please go through this [blog](https://aws.amazon.com/blogs/machine-learning/announcing-the-launch-of-amazon-comprehend-custom-entity-recognition-real-time-endpoints/) which tells how to build an Amazon Comprehend custom entity recognition model and set up an Amazon Comprehend Custom Entity Recognition real time endpoint for synchronous inference. I have used the same to train my model and generate the endpoint which is used in the lambda function.You can create your own custom model and endpoints using your own training data also by folowwing above blog.
 
-2. Please go through above API Gateway tutorial to create Amazon API Gateway as proxy to our Lambda function. Lambda function code is shared in 'code' folder.
+2. Please go through the tutorial documentation [link](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html), which depicts on how to create an Lambda proxy integration with Amazon API gateway. Lambda function code is shared in 'code' folder.
 
 3. As I have used Python 3.6 as my Lambda function runtime hence some knowledge of python 3 version is required.
 

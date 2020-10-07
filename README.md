@@ -10,7 +10,7 @@ Here, I am showing how to invoke an Amazon comprehend custom entity recognizer s
 
 In order to demostrate this functionality, I have used below architecture where Amazon API Gateway is calling the Lambda function in real time which in turn calls the Comprehend CUstom Entity recognition API in real time. To build an API with Lambda integrations, you can use Lambda proxy integration or Lambda non-proxy integration with Amazon API Gateway. I have used 'Lambda proxy integration' here.
 
-![architecture][images/architecture.png]
+![architecture](./images/architecture.png)
 
 You can use the tutorial documentation [link](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html), which depicts on how to create an Lambda proxy integration with Amazon API gateway. 
 
@@ -41,7 +41,7 @@ if you face error like "unknown service", "parameter validation failed", or "obj
 
 While running the test via postman you need to pass the input string as the body and you will get required custom entities as response. In this case my custom entities are 'service' and 'version' which are visible in response sent by Lambda function:
 
-![postman_test][./images/Postman_test.png]
+![postman_test](./images/Postman_test.png)
 
 
 ## Contributing

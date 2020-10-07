@@ -8,7 +8,7 @@ Here, I am showing how to invoke an Amazon comprehend custom entity recognizer s
 
 ## Getting Started
 
-In order to demostrate this functionality, I have used below architecture where Amazon API Gateway is calling the Lambda function in real time which in turn calls the Comprehend CUstom Entity recognition API in real time. To build an API with Lambda integrations, you can use Lambda proxy integration or Lambda non-proxy integration with Amazon API Gateway. I have used 'Lambda proxy integration' here.
+In order to demostrate this functionality, I have used below architecture where Amazon API Gateway is calling the Lambda function in real time which in turn calls the Comprehend Custom Entity recognition API in real time. To build an API with Lambda integrations, you can use Lambda proxy integration or Lambda non-proxy integration with Amazon API Gateway. I have used 'Lambda proxy integration' here.
 
 ![architecture](./images/architecture.png)
 
@@ -16,7 +16,7 @@ In order to demostrate this functionality, I have used below architecture where 
 
 ### Prerequisites
 
-1. Please go through this [blog](https://aws.amazon.com/blogs/machine-learning/announcing-the-launch-of-amazon-comprehend-custom-entity-recognition-real-time-endpoints/) which tells how to build an Amazon Comprehend custom entity recognition model and set up an Amazon Comprehend Custom Entity Recognition real time endpoint for synchronous inference. I have used the same to train my model and generate the endpoint which is used in the lambda function.You can create your own custom model and endpoints using your own training data also by folowwing above blog.
+1. Please go through this [blog](https://aws.amazon.com/blogs/machine-learning/announcing-the-launch-of-amazon-comprehend-custom-entity-recognition-real-time-endpoints/) which tells how to build an Amazon Comprehend custom entity recognition model and set up an Amazon Comprehend Custom Entity Recognition real time endpoint for synchronous inference. I have used the same to train my model and generate the endpoint which is used in the lambda function.You can create your own custom model and endpoints using your own training data also by following above blog.
 
 2. Please go through the tutorial documentation [link](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html), which depicts on how to create an Lambda proxy integration with Amazon API gateway. Lambda function code is shared in 'code' folder.
 
